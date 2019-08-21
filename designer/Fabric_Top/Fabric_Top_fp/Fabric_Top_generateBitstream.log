@@ -1,0 +1,20 @@
+Software Version: 12.600.0.14
+Opened 'C:\Creative-Eval-Board-master\SmartFusion2_Fabric\designer\Fabric_Top\Fabric_Top_fp\Fabric_Top.pro'
+The 'open_project' command succeeded.
+PDB file 'C:\Creative-Eval-Board-master\SmartFusion2_Fabric\designer\Fabric_Top\Fabric_Top.pdb' has been loaded successfully.
+DESIGN : Fabric_Top;  CHECKSUM : 0000;  PDB_VERSION : 1.9
+Load Programming Data(s) Finished : Fri Aug 02 17:12:26 2019 (Elapsed time 00:00:01)
+The 'load_programming_data' command succeeded.
+File/Folder 'C:\Creative-Eval-Board-master\SmartFusion2_Fabric\designer\Fabric_Top\Fabric_Top.ppd' will be overwritten.
+Successfully exported PPD file for currently secured device: 'C:\Creative-Eval-Board-master\SmartFusion2_Fabric\designer\Fabric_Top\Fabric_Top.ppd'; file programs Fabric.
+Fabric component bitstream digest: 0752b000e45c8a9d83b3432a9ff92389683bd20ced3f8c88e79cb656e60c3712
+Finished: Fri Aug 02 17:12:43 2019 (Elapsed time 00:00:17)
+
+The 'export_single_ppd' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
+Exported log file C:\Creative-Eval-Board-master\SmartFusion2_Fabric\designer\Fabric_Top\Fabric_Top_fp\Fabric_Top.log.
+The 'close_project' command succeeded.
+The Execute Script command succeeded.

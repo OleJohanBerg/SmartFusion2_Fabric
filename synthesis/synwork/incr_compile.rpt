@@ -1,0 +1,72 @@
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: ELNO-OLBE2
+
+Implementation : synthesis
+Synopsys HDL compiler and linker, Version comp2018q2p1, Build 223R, Built Oct 23 2018 09:18:38
+
+Modified Files: 1
+FID:  path (prevtimestamp, timestamp)
+6        C:\Creative-Eval-Board-master\SmartFusion2_Fabric\hdl\LED_ctrl.vhd (2019-08-02 17:07:05, 2019-08-02 17:11:09)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 1
+MID:  lib.cell.view
+6        work.led_ctrl.rtl may have changed because the following files changed:
+                        C:\Creative-Eval-Board-master\SmartFusion2_Fabric\hdl\LED_ctrl.vhd (2019-08-02 17:07:05, 2019-08-02 17:11:09) <-- (architecture and entity definition)
+
+*******************************************************************
+Unmodified files: 17
+FID:  path (timestamp)
+0        C:\Creative-Eval-Board-master\SmartFusion2_Fabric\component\Actel\SgCore\OSC\2.0.101\osc_comps.vhd (2019-04-30 10:28:56)
+1        C:\Creative-Eval-Board-master\SmartFusion2_Fabric\component\work\FCCC_C0\FCCC_C0.vhd (2019-07-29 15:54:36)
+2        C:\Creative-Eval-Board-master\SmartFusion2_Fabric\component\work\FCCC_C0\FCCC_C0_0\FCCC_C0_FCCC_C0_0_FCCC.vhd (2019-07-29 15:54:36)
+3        C:\Creative-Eval-Board-master\SmartFusion2_Fabric\component\work\Fabric_Top\Fabric_Top.vhd (2019-08-02 16:15:29)
+4        C:\Creative-Eval-Board-master\SmartFusion2_Fabric\component\work\OSC_C0\OSC_C0.vhd (2019-07-29 15:55:24)
+5        C:\Creative-Eval-Board-master\SmartFusion2_Fabric\component\work\OSC_C0\OSC_C0_0\OSC_C0_OSC_C0_0_OSC.vhd (2019-07-29 15:55:24)
+7        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\generic\smartfusion2.vhd (2018-12-21 07:52:13)
+8        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\arith.vhd (2018-12-21 07:52:16)
+9        C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\location.map (2018-12-21 07:52:16)
+10       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\numeric.vhd (2018-12-21 07:52:16)
+11       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std.vhd (2018-12-21 07:52:16)
+12       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std1164.vhd (2018-12-21 07:52:16)
+13       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\std_textio.vhd (2018-12-21 07:52:16)
+14       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd2008\unsigned.vhd (2018-12-21 07:52:16)
+15       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\hyperents.vhd (2018-12-21 07:52:16)
+16       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\snps_haps_pkg.vhd (2018-12-21 07:52:16)
+17       C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\lib\vhd\umr_capim.vhd (2018-12-21 07:52:16)
+
+*******************************************************************
+Unchanged modules: 22
+MID:  lib.cell.view
+0        work.fabric_top.rtl
+1        work.fabric_top.vhdl
+2        work.fccc_c0.rtl
+3        work.fccc_c0.vhdl
+4        work.fccc_c0_fccc_c0_0_fccc.def_arch
+5        work.fccc_c0_fccc_c0_0_fccc.vhdl
+8        work.osc_c0.rtl
+9        work.osc_c0.vhdl
+10       work.osc_c0_osc_c0_0_osc.def_arch
+11       work.osc_c0_osc_c0_0_osc.vhdl
+12       work.rcosc_1mhz.def_arch
+13       work.rcosc_1mhz.vhdl
+14       work.rcosc_1mhz_fab.def_arch
+15       work.rcosc_1mhz_fab.vhdl
+16       work.rcosc_25_50mhz.def_arch
+17       work.rcosc_25_50mhz.vhdl
+18       work.rcosc_25_50mhz_fab.def_arch
+19       work.rcosc_25_50mhz_fab.vhdl
+20       work.xtlosc.def_arch
+21       work.xtlosc.vhdl
+22       work.xtlosc_fab.def_arch
+23       work.xtlosc_fab.vhdl

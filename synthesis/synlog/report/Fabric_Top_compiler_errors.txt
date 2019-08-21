@@ -1,0 +1,2 @@
+@E: CD297 :"C:\Creative-Eval-Board-master\SmartFusion2_Fabric\hdl\LED_ctrl.vhd":74:3:74:8|Width mismatch, location has width 4, value 2
+

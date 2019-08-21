@@ -1,0 +1,1836 @@
+<html>
+    <head>
+        <style>
+      body { font-family:arial; font-size:10pt; text-align:left; }
+      h1, h2 {
+          padding-top: 30px;
+      }
+      h3 {
+          padding-top: 20px;
+      }
+      h4, h5, h6 {
+          padding-top: 10px;
+          font-size:12pt;
+      }
+      table {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          border-collapse:collapse;
+      }
+      table th, table td {
+          font-family:arial; font-size:10pt; text-align:left;
+          border-color:#B0B0B0;
+          border-style:solid;
+          border-width:1px;
+          padding: 4px;
+      }
+     </style>
+    </head>
+    <body>
+        <h1 align="center">Timing Report Min Delay Analysis
+</h1>
+        <p>SmartTime Version 12.600.0.14</p>
+        <p>Microsemi Corporation - Microsemi Libero Software Release v12.1 (Version 12.600.0.14)</p>
+        <p>Date: Tue Jul 30 12:25:09 2019
+</p>
+        <table cellpadding="4">
+            <tr/>
+            <tr>
+                <td>Design</td>
+                <td>Fabric_Top</td>
+            </tr>
+            <tr>
+                <td>Family</td>
+                <td>SmartFusion2</td>
+            </tr>
+            <tr>
+                <td>Die</td>
+                <td>M2S025</td>
+            </tr>
+            <tr>
+                <td>Package</td>
+                <td>256 VF</td>
+            </tr>
+            <tr>
+                <td>Temperature Range</td>
+                <td>0 - 85 C</td>
+            </tr>
+            <tr>
+                <td>Voltage Range</td>
+                <td>1.14 - 1.26 V</td>
+            </tr>
+            <tr>
+                <td>Speed Grade</td>
+                <td>STD</td>
+            </tr>
+            <tr>
+                <td>Design State</td>
+                <td>Post-Layout</td>
+            </tr>
+            <tr>
+                <td>Data source</td>
+                <td>Production</td>
+            </tr>
+            <tr>
+                <td>Min Operating Conditions</td>
+                <td>BEST - 1.26 V - 0 C</td>
+            </tr>
+            <tr>
+                <td>Max Operating Conditions</td>
+                <td>WORST - 1.14 V - 85 C</td>
+            </tr>
+            <tr>
+                <td>Operating Conditions</td>
+                <td>BEST - 1.26 V - 0 C</td>
+            </tr>
+            <tr>
+                <td>Scenario for Timing Analysis</td>
+                <td>timing_analysis</td>
+            </tr>
+        </table>
+        <p/>
+        <h2>Summary</h2>
+        <table cellpadding="4">
+            <tr>
+                <th>Clock Domain</th>
+                <th>Required Period (ns)</th>
+                <th>Required Frequency (MHz)</th>
+                <th>External Hold (ns)</th>
+                <th>Min Clock-To-Out (ns)</th>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>-0.913</td>
+                <td>4.490</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter[17]:Q</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>5.509</td>
+            </tr>
+            <tr>
+                <td>OSC_0/OSC_C0_0/I_RCOSC_25_50MHZ:CLKOUT</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+                <td>N/A</td>
+            </tr>
+        </table>
+        <p/>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th>Min Delay (ns)</th>
+                <th>Max Delay (ns)</th>
+            </tr>
+            <tr>
+                <td>Input to Output</td>
+                <td>N/A</td>
+            </tr>
+        </table>
+        <h2>Clock Domain FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</h2>
+        <p/>
+        <h3>SET Register to Register</h3>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th>From</th>
+                <th>To</th>
+                <th>Delay (ns)</th>
+                <th>Slack (ns)</th>
+                <th>Arrival (ns)</th>
+                <th>Required (ns)</th>
+                <th>Hold (ns)</th>
+            </tr>
+            <tr>
+                <td>Path 1</td>
+                <td>LED_ctrl_0/pb_reg1:CLK</td>
+                <td>LED_ctrl_0/pb_reg2:D</td>
+                <td>0.323</td>
+                <td/>
+                <td>1.399</td>
+                <td/>
+                <td>0.000</td>
+            </tr>
+            <tr>
+                <td>Path 2</td>
+                <td>LED_ctrl_0/counter[0]:CLK</td>
+                <td>LED_ctrl_0/counter[0]:D</td>
+                <td>0.429</td>
+                <td/>
+                <td>1.479</td>
+                <td/>
+                <td>0.000</td>
+            </tr>
+            <tr>
+                <td>Path 3</td>
+                <td>LED_ctrl_0/counter[3]:CLK</td>
+                <td>LED_ctrl_0/counter[3]:D</td>
+                <td>0.436</td>
+                <td/>
+                <td>1.515</td>
+                <td/>
+                <td>0.000</td>
+            </tr>
+            <tr>
+                <td>Path 4</td>
+                <td>LED_ctrl_0/counter[12]:CLK</td>
+                <td>LED_ctrl_0/counter[12]:D</td>
+                <td>0.439</td>
+                <td/>
+                <td>1.508</td>
+                <td/>
+                <td>0.000</td>
+            </tr>
+            <tr>
+                <td>Path 5</td>
+                <td>LED_ctrl_0/counter[6]:CLK</td>
+                <td>LED_ctrl_0/counter[6]:D</td>
+                <td>0.439</td>
+                <td/>
+                <td>1.512</td>
+                <td/>
+                <td>0.000</td>
+            </tr>
+        </table>
+        <p/>
+        <h4>Expanded Path 1</h4>
+        <table cellpadding="4">
+            <tr>
+                <th>Pin Name</th>
+                <th>Type</th>
+                <th>Net Name</th>
+                <th>Cell Name</th>
+                <th>Op</th>
+                <th>Delay (ns)</th>
+                <th>Total (ns)</th>
+                <th>Fanout</th>
+                <th>Edge</th>
+            </tr>
+            <tr>
+                <td>From: LED_ctrl_0/pb_reg1:CLK</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>To: LED_ctrl_0/pb_reg2:D</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>data arrival time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>1.399</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>data required time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>-</td>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>slack</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+            <tr>
+                <td>Data arrival time calculation</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>0.000</td>
+                <td>0.000</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td>Clock source</td>
+                <td/>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>0.000</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST:An</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_net</td>
+                <td/>
+                <td>+</td>
+                <td>0.167</td>
+                <td>0.167</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST:YEn</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:GBM</td>
+                <td>+</td>
+                <td>0.118</td>
+                <td>0.285</td>
+                <td>2</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0:An</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</td>
+                <td/>
+                <td>+</td>
+                <td>0.239</td>
+                <td>0.524</td>
+                <td/>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0:YR</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:RGB</td>
+                <td>+</td>
+                <td>0.212</td>
+                <td>0.736</td>
+                <td>18</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/pb_reg1:CLK</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0_rgbr_net_1</td>
+                <td/>
+                <td>+</td>
+                <td>0.340</td>
+                <td>1.076</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/pb_reg1:Q</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:SLE</td>
+                <td>+</td>
+                <td>0.058</td>
+                <td>1.134</td>
+                <td>1</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/pb_reg2:D</td>
+                <td>net</td>
+                <td>LED_ctrl_0/pb_reg1_Z</td>
+                <td/>
+                <td>+</td>
+                <td>0.265</td>
+                <td>1.399</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>data arrival time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>1.399</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+            <tr>
+                <td>Data required time calculation</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td>Clock source</td>
+                <td/>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST:An</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_net</td>
+                <td/>
+                <td>+</td>
+                <td>0.167</td>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST:YEn</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:GBM</td>
+                <td>+</td>
+                <td>0.118</td>
+                <td>N/C</td>
+                <td>2</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0:An</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</td>
+                <td/>
+                <td>+</td>
+                <td>0.239</td>
+                <td>N/C</td>
+                <td/>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0:YR</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:RGB</td>
+                <td>+</td>
+                <td>0.212</td>
+                <td>N/C</td>
+                <td>18</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/pb_reg2:CLK</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0_rgbr_net_1</td>
+                <td/>
+                <td>+</td>
+                <td>0.349</td>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/pb_reg2:D</td>
+                <td>Library hold time</td>
+                <td/>
+                <td>ADLIB:SLE</td>
+                <td>+</td>
+                <td>0.000</td>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+        </table>
+        <h3>SET External Hold</h3>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th>From</th>
+                <th>To</th>
+                <th>Delay (ns)</th>
+                <th>Slack (ns)</th>
+                <th>Arrival (ns)</th>
+                <th>Required (ns)</th>
+                <th>Hold (ns)</th>
+                <th>External Hold (ns)</th>
+            </tr>
+            <tr>
+                <td>Path 1</td>
+                <td>PB_SW</td>
+                <td>LED_ctrl_0/pb_reg1:D</td>
+                <td>2.021</td>
+                <td/>
+                <td>2.021</td>
+                <td/>
+                <td>0.000</td>
+                <td>-0.913</td>
+            </tr>
+        </table>
+        <p/>
+        <h4>Expanded Path 1</h4>
+        <table cellpadding="4">
+            <tr>
+                <th>Pin Name</th>
+                <th>Type</th>
+                <th>Net Name</th>
+                <th>Cell Name</th>
+                <th>Op</th>
+                <th>Delay (ns)</th>
+                <th>Total (ns)</th>
+                <th>Fanout</th>
+                <th>Edge</th>
+            </tr>
+            <tr>
+                <td>From: PB_SW</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>To: LED_ctrl_0/pb_reg1:D</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>data arrival time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2.021</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>data required time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>-</td>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>slack</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+            <tr>
+                <td>Data arrival time calculation</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>PB_SW</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>0.000</td>
+                <td>0.000</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>PB_SW_ibuf/U0/U_IOPAD:PAD</td>
+                <td>net</td>
+                <td>PB_SW</td>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>0.000</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>PB_SW_ibuf/U0/U_IOPAD:Y</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:IOPAD_IN</td>
+                <td>+</td>
+                <td>0.798</td>
+                <td>0.798</td>
+                <td>1</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>PB_SW_ibuf/U0/U_IOINFF:A</td>
+                <td>net</td>
+                <td>PB_SW_ibuf/U0/YIN1</td>
+                <td/>
+                <td>+</td>
+                <td>0.341</td>
+                <td>1.139</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>PB_SW_ibuf/U0/U_IOINFF:Y</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:IOINFF_BYPASS</td>
+                <td>+</td>
+                <td>0.104</td>
+                <td>1.243</td>
+                <td>1</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/pb_reg1:D</td>
+                <td>net</td>
+                <td>PB_SW_c</td>
+                <td/>
+                <td>+</td>
+                <td>0.778</td>
+                <td>2.021</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>data arrival time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2.021</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+            <tr>
+                <td>Data required time calculation</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td>Clock source</td>
+                <td/>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST:An</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_net</td>
+                <td/>
+                <td>+</td>
+                <td>0.172</td>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST:YEn</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:GBM</td>
+                <td>+</td>
+                <td>0.122</td>
+                <td>N/C</td>
+                <td>2</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0:An</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</td>
+                <td/>
+                <td>+</td>
+                <td>0.246</td>
+                <td>N/C</td>
+                <td/>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0:YR</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:RGB</td>
+                <td>+</td>
+                <td>0.218</td>
+                <td>N/C</td>
+                <td>18</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/pb_reg1:CLK</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0_rgbr_net_1</td>
+                <td/>
+                <td>+</td>
+                <td>0.350</td>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/pb_reg1:D</td>
+                <td>Library hold time</td>
+                <td/>
+                <td>ADLIB:SLE</td>
+                <td>+</td>
+                <td>0.000</td>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+        </table>
+        <h3>SET Clock to Output</h3>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th>From</th>
+                <th>To</th>
+                <th>Delay (ns)</th>
+                <th>Slack (ns)</th>
+                <th>Arrival (ns)</th>
+                <th>Required (ns)</th>
+                <th>Clock to Out (ns)</th>
+            </tr>
+            <tr>
+                <td>Path 1</td>
+                <td>LED_ctrl_0/pb_reg2:CLK</td>
+                <td>LED[0]</td>
+                <td>3.416</td>
+                <td/>
+                <td>4.490</td>
+                <td/>
+                <td>4.490</td>
+            </tr>
+            <tr>
+                <td>Path 2</td>
+                <td>LED_ctrl_0/counter[18]:CLK</td>
+                <td>LED[0]</td>
+                <td>3.483</td>
+                <td/>
+                <td>4.552</td>
+                <td/>
+                <td>4.552</td>
+            </tr>
+            <tr>
+                <td>Path 3</td>
+                <td>LED_ctrl_0/pb_reg2:CLK</td>
+                <td>LED[1]</td>
+                <td>3.616</td>
+                <td/>
+                <td>4.690</td>
+                <td/>
+                <td>4.690</td>
+            </tr>
+            <tr>
+                <td>Path 4</td>
+                <td>LED_ctrl_0/counter[18]:CLK</td>
+                <td>LED[1]</td>
+                <td>3.683</td>
+                <td/>
+                <td>4.752</td>
+                <td/>
+                <td>4.752</td>
+            </tr>
+        </table>
+        <p/>
+        <h4>Expanded Path 1</h4>
+        <table cellpadding="4">
+            <tr>
+                <th>Pin Name</th>
+                <th>Type</th>
+                <th>Net Name</th>
+                <th>Cell Name</th>
+                <th>Op</th>
+                <th>Delay (ns)</th>
+                <th>Total (ns)</th>
+                <th>Fanout</th>
+                <th>Edge</th>
+            </tr>
+            <tr>
+                <td>From: LED_ctrl_0/pb_reg2:CLK</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>To: LED[0]</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>data arrival time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4.490</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>data required time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>-</td>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>slack</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+            <tr>
+                <td>Data arrival time calculation</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>0.000</td>
+                <td>0.000</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td>Clock source</td>
+                <td/>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>0.000</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST:An</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_net</td>
+                <td/>
+                <td>+</td>
+                <td>0.167</td>
+                <td>0.167</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST:YEn</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:GBM</td>
+                <td>+</td>
+                <td>0.118</td>
+                <td>0.285</td>
+                <td>2</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0:An</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_YWn_GEast</td>
+                <td/>
+                <td>+</td>
+                <td>0.239</td>
+                <td>0.524</td>
+                <td/>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0:YR</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:RGB</td>
+                <td>+</td>
+                <td>0.212</td>
+                <td>0.736</td>
+                <td>18</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/pb_reg2:CLK</td>
+                <td>net</td>
+                <td>FCCC_0/FCCC_C0_0/GL0_INST/U0_RGB1_RGB0_rgbr_net_1</td>
+                <td/>
+                <td>+</td>
+                <td>0.338</td>
+                <td>1.074</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/pb_reg2:Q</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:SLE</td>
+                <td>+</td>
+                <td>0.058</td>
+                <td>1.132</td>
+                <td>2</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/LED[0]:B</td>
+                <td>net</td>
+                <td>LED_ctrl_0/pb_reg2_Z</td>
+                <td/>
+                <td>+</td>
+                <td>0.214</td>
+                <td>1.346</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/LED[0]:Y</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:CFG4</td>
+                <td>+</td>
+                <td>0.050</td>
+                <td>1.396</td>
+                <td>1</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_obuf[0]/U0/U_IOOUTFF:A</td>
+                <td>net</td>
+                <td>LED_c[0]</td>
+                <td/>
+                <td>+</td>
+                <td>1.130</td>
+                <td>2.526</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_obuf[0]/U0/U_IOOUTFF:Y</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:IOOUTFF_BYPASS</td>
+                <td>+</td>
+                <td>0.124</td>
+                <td>2.650</td>
+                <td>1</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_obuf[0]/U0/U_IOPAD:D</td>
+                <td>net</td>
+                <td>LED_obuf[0]/U0/DOUT</td>
+                <td/>
+                <td>+</td>
+                <td>0.219</td>
+                <td>2.869</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_obuf[0]/U0/U_IOPAD:PAD</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:IOPAD_TRI</td>
+                <td>+</td>
+                <td>1.621</td>
+                <td>4.490</td>
+                <td>0</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED[0]</td>
+                <td>net</td>
+                <td>LED[0]</td>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>4.490</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>data arrival time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>4.490</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+            <tr>
+                <td>Data required time calculation</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>FCCC_0/FCCC_C0_0/CCC_INST/INST_CCC_IP:GL0</td>
+                <td>Clock source</td>
+                <td/>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED[0]</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr/>
+        </table>
+        <h3>SET Register to Asynchronous</h3>
+        <p>No Path</p>
+        <h3>SET External Removal</h3>
+        <p>No Path</p>
+        <h3>SET Asynchronous to Register</h3>
+        <p>No Path</p>
+        <h2>Clock Domain LED_ctrl_0/counter[17]:Q</h2>
+        <p>Info: The maximum frequency of this clock domain is limited by the minimum pulse widths of pin LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_RGB1:An</p>
+        <p/>
+        <h3>SET Register to Register</h3>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th>From</th>
+                <th>To</th>
+                <th>Delay (ns)</th>
+                <th>Slack (ns)</th>
+                <th>Arrival (ns)</th>
+                <th>Required (ns)</th>
+                <th>Hold (ns)</th>
+            </tr>
+            <tr>
+                <td>Path 1</td>
+                <td>LED_ctrl_0/sh_lft[1]:CLK</td>
+                <td>LED_ctrl_0/sh_lft[0]:D</td>
+                <td>0.329</td>
+                <td/>
+                <td>2.464</td>
+                <td/>
+                <td>0.000</td>
+            </tr>
+            <tr>
+                <td>Path 2</td>
+                <td>LED_ctrl_0/sh_lft[0]:CLK</td>
+                <td>LED_ctrl_0/sh_lft[1]:D</td>
+                <td>0.403</td>
+                <td/>
+                <td>2.534</td>
+                <td/>
+                <td>0.000</td>
+            </tr>
+        </table>
+        <p/>
+        <h4>Expanded Path 1</h4>
+        <table cellpadding="4">
+            <tr>
+                <th>Pin Name</th>
+                <th>Type</th>
+                <th>Net Name</th>
+                <th>Cell Name</th>
+                <th>Op</th>
+                <th>Delay (ns)</th>
+                <th>Total (ns)</th>
+                <th>Fanout</th>
+                <th>Edge</th>
+            </tr>
+            <tr>
+                <td>From: LED_ctrl_0/sh_lft[1]:CLK</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>To: LED_ctrl_0/sh_lft[0]:D</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>data arrival time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2.464</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>data required time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>-</td>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>slack</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+            <tr>
+                <td>Data arrival time calculation</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter[17]:Q</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>0.000</td>
+                <td>0.000</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter[17]:Q</td>
+                <td>Clock source</td>
+                <td/>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>0.000</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]:An</td>
+                <td>net</td>
+                <td>LED_ctrl_0/counter_0[17]</td>
+                <td/>
+                <td>+</td>
+                <td>1.113</td>
+                <td>1.113</td>
+                <td/>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]:YEn</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:GBM</td>
+                <td>+</td>
+                <td>0.250</td>
+                <td>1.363</td>
+                <td>1</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_RGB1:An</td>
+                <td>net</td>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_YWn_GEast</td>
+                <td/>
+                <td>+</td>
+                <td>0.239</td>
+                <td>1.602</td>
+                <td/>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_RGB1:YR</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:RGB</td>
+                <td>+</td>
+                <td>0.212</td>
+                <td>1.814</td>
+                <td>2</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/sh_lft[1]:CLK</td>
+                <td>net</td>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_RGB1_YR</td>
+                <td/>
+                <td>+</td>
+                <td>0.321</td>
+                <td>2.135</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/sh_lft[1]:Q</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:SLE</td>
+                <td>+</td>
+                <td>0.058</td>
+                <td>2.193</td>
+                <td>2</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/sh_lft[0]:D</td>
+                <td>net</td>
+                <td>LED_ctrl_0/sh_lft[1]</td>
+                <td/>
+                <td>+</td>
+                <td>0.271</td>
+                <td>2.464</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>data arrival time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>2.464</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+            <tr>
+                <td>Data required time calculation</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter[17]:Q</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter[17]:Q</td>
+                <td>Clock source</td>
+                <td/>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]:An</td>
+                <td>net</td>
+                <td>LED_ctrl_0/counter_0[17]</td>
+                <td/>
+                <td>+</td>
+                <td>1.113</td>
+                <td>N/C</td>
+                <td/>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]:YEn</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:GBM</td>
+                <td>+</td>
+                <td>0.250</td>
+                <td>N/C</td>
+                <td>1</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_RGB1:An</td>
+                <td>net</td>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_YWn_GEast</td>
+                <td/>
+                <td>+</td>
+                <td>0.239</td>
+                <td>N/C</td>
+                <td/>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_RGB1:YR</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:RGB</td>
+                <td>+</td>
+                <td>0.212</td>
+                <td>N/C</td>
+                <td>2</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/sh_lft[0]:CLK</td>
+                <td>net</td>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_RGB1_YR</td>
+                <td/>
+                <td>+</td>
+                <td>0.327</td>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/sh_lft[0]:D</td>
+                <td>Library hold time</td>
+                <td/>
+                <td>ADLIB:SLE</td>
+                <td>+</td>
+                <td>0.000</td>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+        </table>
+        <h3>SET External Hold</h3>
+        <p>No Path</p>
+        <h3>SET Clock to Output</h3>
+        <table cellpadding="4">
+            <tr>
+                <th/>
+                <th>From</th>
+                <th>To</th>
+                <th>Delay (ns)</th>
+                <th>Slack (ns)</th>
+                <th>Arrival (ns)</th>
+                <th>Required (ns)</th>
+                <th>Clock to Out (ns)</th>
+            </tr>
+            <tr>
+                <td>Path 1</td>
+                <td>LED_ctrl_0/sh_lft[0]:CLK</td>
+                <td>LED[0]</td>
+                <td>3.378</td>
+                <td/>
+                <td>5.509</td>
+                <td/>
+                <td>5.509</td>
+            </tr>
+            <tr>
+                <td>Path 2</td>
+                <td>LED_ctrl_0/sh_lft[1]:CLK</td>
+                <td>LED[1]</td>
+                <td>3.578</td>
+                <td/>
+                <td>5.713</td>
+                <td/>
+                <td>5.713</td>
+            </tr>
+        </table>
+        <p/>
+        <h4>Expanded Path 1</h4>
+        <table cellpadding="4">
+            <tr>
+                <th>Pin Name</th>
+                <th>Type</th>
+                <th>Net Name</th>
+                <th>Cell Name</th>
+                <th>Op</th>
+                <th>Delay (ns)</th>
+                <th>Total (ns)</th>
+                <th>Fanout</th>
+                <th>Edge</th>
+            </tr>
+            <tr>
+                <td>From: LED_ctrl_0/sh_lft[0]:CLK</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>To: LED[0]</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>data arrival time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>5.509</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>data required time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td>-</td>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>slack</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+            <tr>
+                <td>Data arrival time calculation</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter[17]:Q</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>0.000</td>
+                <td>0.000</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter[17]:Q</td>
+                <td>Clock source</td>
+                <td/>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>0.000</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]:An</td>
+                <td>net</td>
+                <td>LED_ctrl_0/counter_0[17]</td>
+                <td/>
+                <td>+</td>
+                <td>1.113</td>
+                <td>1.113</td>
+                <td/>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]:YEn</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:GBM</td>
+                <td>+</td>
+                <td>0.250</td>
+                <td>1.363</td>
+                <td>1</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_RGB1:An</td>
+                <td>net</td>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_YWn_GEast</td>
+                <td/>
+                <td>+</td>
+                <td>0.239</td>
+                <td>1.602</td>
+                <td/>
+                <td>f</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_RGB1:YR</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:RGB</td>
+                <td>+</td>
+                <td>0.212</td>
+                <td>1.814</td>
+                <td>2</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/sh_lft[0]:CLK</td>
+                <td>net</td>
+                <td>LED_ctrl_0/counter_inferred_clock_RNIVA6D[17]/U0_RGB1_YR</td>
+                <td/>
+                <td>+</td>
+                <td>0.317</td>
+                <td>2.131</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/sh_lft[0]:Q</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:SLE</td>
+                <td>+</td>
+                <td>0.058</td>
+                <td>2.189</td>
+                <td>2</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/LED[0]:A</td>
+                <td>net</td>
+                <td>LED_ctrl_0/sh_lft[0]</td>
+                <td/>
+                <td>+</td>
+                <td>0.037</td>
+                <td>2.226</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/LED[0]:Y</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:CFG4</td>
+                <td>+</td>
+                <td>0.189</td>
+                <td>2.415</td>
+                <td>1</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_obuf[0]/U0/U_IOOUTFF:A</td>
+                <td>net</td>
+                <td>LED_c[0]</td>
+                <td/>
+                <td>+</td>
+                <td>1.130</td>
+                <td>3.545</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_obuf[0]/U0/U_IOOUTFF:Y</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:IOOUTFF_BYPASS</td>
+                <td>+</td>
+                <td>0.124</td>
+                <td>3.669</td>
+                <td>1</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_obuf[0]/U0/U_IOPAD:D</td>
+                <td>net</td>
+                <td>LED_obuf[0]/U0/DOUT</td>
+                <td/>
+                <td>+</td>
+                <td>0.219</td>
+                <td>3.888</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED_obuf[0]/U0/U_IOPAD:PAD</td>
+                <td>cell</td>
+                <td/>
+                <td>ADLIB:IOPAD_TRI</td>
+                <td>+</td>
+                <td>1.621</td>
+                <td>5.509</td>
+                <td>0</td>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED[0]</td>
+                <td>net</td>
+                <td>LED[0]</td>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>5.509</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>data arrival time</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>5.509</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr/>
+            <tr>
+                <td>Data required time calculation</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter[17]:Q</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td>N/C</td>
+                <td/>
+                <td/>
+            </tr>
+            <tr>
+                <td>LED_ctrl_0/counter[17]:Q</td>
+                <td>Clock source</td>
+                <td/>
+                <td/>
+                <td>+</td>
+                <td>0.000</td>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr>
+                <td>LED[0]</td>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td/>
+                <td>N/C</td>
+                <td/>
+                <td>r</td>
+            </tr>
+            <tr/>
+        </table>
+        <h3>SET Register to Asynchronous</h3>
+        <p>No Path</p>
+        <h3>SET External Removal</h3>
+        <p>No Path</p>
+        <h3>SET Asynchronous to Register</h3>
+        <p>No Path</p>
+        <h2>Clock Domain OSC_0/OSC_C0_0/I_RCOSC_25_50MHZ:CLKOUT</h2>
+        <p/>
+        <h3>SET Register to Register</h3>
+        <p>No Path</p>
+        <h3>SET External Hold</h3>
+        <p>No Path</p>
+        <h3>SET Clock to Output</h3>
+        <p>No Path</p>
+        <h3>SET Register to Asynchronous</h3>
+        <p>No Path</p>
+        <h3>SET External Removal</h3>
+        <p>No Path</p>
+        <h3>SET Asynchronous to Register</h3>
+        <p>No Path</p>
+        <h2>Path Set Pin to Pin</h2>
+        <h3>SET Input to Output</h3>
+        <p>No Path</p>
+        <h2>Path Set User Sets</h2>
+    </body>
+</html>

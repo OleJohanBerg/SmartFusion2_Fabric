@@ -1,0 +1,11 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "C:\Creative-Eval-Board-master\SmartFusion2_Fabric\designer\impl1\Fabric_Top.adb"
+LIST SOURCE_FILES
+VALUE "C:\Creative-Eval-Board-master\SmartFusion2_Fabric\constraint\io\Fabric_Top.pdc;pdc"
+VALUE "C:\Creative-Eval-Board-master\SmartFusion2_Fabric\constraint\io\user.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "C:\Creative-Eval-Board-master\SmartFusion2_Fabric\synthesis\Fabric_Top_vm.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

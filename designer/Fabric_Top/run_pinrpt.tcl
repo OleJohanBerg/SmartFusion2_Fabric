@@ -1,0 +1,10 @@
+DESIGN=Fabric_Top
+DESDIR=C:\Creative-Eval-Board-master\SmartFusion2_Fabric\designer\Fabric_Top
+TARGET_DIR=C:\Creative-Eval-Board-master\SmartFusion2_Fabric\designer\Fabric_Top
+FAM=SmartFusion2
+DIE=PA4M2500_N
+PACKAGE=vf256
+PINRPT_BY_NAME=1
+PINRPT_BY_NUMBER=1
+BANK_REPORT=1
+IOREG_REPORT=1

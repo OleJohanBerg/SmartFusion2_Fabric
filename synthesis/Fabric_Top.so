@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>Fabric_Top</design>
+	<target_verilog>C:\Creative-Eval-Board-master\SmartFusion2_Fabric\synthesis\Fabric_Top.vm</target_verilog>
+</SynplifyOutput>

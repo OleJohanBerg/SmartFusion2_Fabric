@@ -1,0 +1,102 @@
+# Fri Aug  2 17:11:18 2019
+
+
+Copyright (C) 1994-2018 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: N-2018.03M-SP1-1
+Install: C:\Microsemi\Libero_SoC_v12.1\SynplifyPro
+OS: Windows 6.2
+
+Hostname: ELNO-OLBE2
+
+Implementation : synthesis
+Synopsys Generic Technology Pre-mapping, Version mapact, Build 2461R, Built Nov 29 2018 09:35:20
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Creative-Eval-Board-master\SmartFusion2_Fabric\designer\Fabric_Top\synthesis.fdc
+@N: MF284 |Setting synthesis effort to medium for the design
+@L: C:\Creative-Eval-Board-master\SmartFusion2_Fabric\synthesis\Fabric_Top_scck.rpt 
+Printing clock  summary report in "C:\Creative-Eval-Board-master\SmartFusion2_Fabric\synthesis\Fabric_Top_scck.rpt" file 
+@N: MF916 |Option synthesis_strategy=base is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MF284 |Setting synthesis effort to medium for the design
+@N: MH105 |UMR3 is only supported for HAPS-80.
+@N: MH105 |UMR3 is only supported for HAPS-80.
+syn_allowed_resources : blockrams=31  set on top level netlist Fabric_Top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                             Requested     Requested     Clock        Clock                   Clock
+Level     Clock                                             Frequency     Period        Type         Group                   Load 
+----------------------------------------------------------------------------------------------------------------------------------
+0 -       System                                            100.0 MHz     10.000        system       system_clkgroup         0    
+                                                                                                                                  
+0 -       FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     21   
+                                                                                                                                  
+0 -       LED_ctrl|counter_inferred_clock[17]               100.0 MHz     10.000        inferred     Inferred_clkgroup_1     4    
+==================================================================================================================================
+
+
+
+Clock Load Summary
+***********************
+
+                                                  Clock     Source                                   Clock Pin                    Non-clock Pin     Non-clock Pin                    
+Clock                                             Load      Pin                                      Seq Example                  Seq Example       Comb Example                     
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                            0         -                                        -                            -                 -                                
+                                                                                                                                                                                     
+FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock     21        FCCC_0.FCCC_C0_0.CCC_INST.GL0(CCC)       LED_ctrl_0.pb_reg1.C         -                 FCCC_0.FCCC_C0_0.GL0_INST.I(BUFG)
+                                                                                                                                                                                     
+LED_ctrl|counter_inferred_clock[17]               4         LED_ctrl_0.counter[18:0].Q[17](dffr)     LED_ctrl_0.sh_lft[3:0].C     -                 -                                
+=====================================================================================================================================================================================
+
+@W: MT530 :"c:\creative-eval-board-master\smartfusion2_fabric\hdl\led_ctrl.vhd":59:1:59:2|Found inferred clock FCCC_C0_FCCC_C0_0_FCCC|GL0_net_inferred_clock which controls 21 sequential elements including LED_ctrl_0.counter[18:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\creative-eval-board-master\smartfusion2_fabric\hdl\led_ctrl.vhd":71:1:71:2|Found inferred clock LED_ctrl|counter_inferred_clock[17] which controls 4 sequential elements including LED_ctrl_0.sh_lft[3:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+
+@N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file C:\Creative-Eval-Board-master\SmartFusion2_Fabric\synthesis\Fabric_Top.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 132MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 48MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Fri Aug  2 17:11:19 2019
+
+###########################################################]

@@ -1,0 +1,7 @@
+C:\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  work.Fabric_Top  -multisrs  C:\Creative-Eval-Board-master\SmartFusion2_Fabric\synthesis\synwork\Fabric_Top_comp.srs  -osyn  C:\Creative-Eval-Board-master\SmartFusion2_Fabric\synthesis\synwork\Fabric_Top_mult.srs  -log  C:\Creative-Eval-Board-master\SmartFusion2_Fabric\synthesis\synlog\Fabric_Top_multi_srs_gen.srr 
+relcom:..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe -link -top work.Fabric_Top -multisrs ..\synwork\Fabric_Top_comp.srs -osyn ..\synwork\Fabric_Top_mult.srs -log ..\synlog\Fabric_Top_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\Fabric_Top_comp.srs|io:i|time:1564758676|size:11128|exec:0|csum:D4D6FDF23DF2548D493D1C74167D884F
+file:..\synwork\Fabric_Top_mult.srs|io:o|time:1564758678|size:3709|exec:0|csum:
+file:..\synlog\Fabric_Top_multi_srs_gen.srr|io:o|time:1564758678|size:1171|exec:0|csum:
+file:..\..\..\..\Microsemi\Libero_SoC_v12.1\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1545375129|size:8731136|exec:1|csum:FDA9CE3068B3473AD3F7DDB573109F00
